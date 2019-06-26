@@ -12,7 +12,7 @@ fs.readFile(htmlPath + 'vdt-aps-template.html', 'utf8', function (err, html) {
     var count = 0;
     var pageId = 'html';
     getNodeList(dom.window.document.getElementById(pageId)).forEach((e) => {
-        if (!e.childNodes.length && e.textContent && e.textContent.trim() 
+        if (!e.childNodes.length && e.textContent && e.textContent.trim()
                 && e.textContent.trim().replace(/[.\%\-\:)\(\/\\’0-9]+/g,"")
                 && ['CODE', 'SCRIPT'].indexOf(e.parentElement.tagName) < 0) {
             var temp = e.textContent.replace(/\n/g, " ").replace(/\t/g, "");
@@ -52,7 +52,7 @@ function getNodeList(elem) {
             if (l[r].childNodes[z].childNodes[0]) {
                 l.push(l[r].childNodes[z]);
                 c++;
-            } //IF           
+            } //IF
         } //FOR
     } //FOR
     return ret;
@@ -70,7 +70,7 @@ function translateJSON(json, lang){
                     //}
                 }).catch(err => {
                     console.error(err);
-                });   
+                });
             }, 1000);
         }
     }
