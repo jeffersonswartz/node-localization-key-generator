@@ -1,0 +1,23 @@
+{
+  "name": "localization-key-generator",
+  "version": "1.0.0",
+  "description": "Node Application to generate JSON with the localization key and add attribute to HTML tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffersonswartz/node-localization-key-generator.git"
+  },
+  "author": "Jefferson Swartz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffersonswartz/node-localization-key-generator/issues"
+  },
+  "homepage": "https://github.com/jeffersonswartz/node-localization-key-generator#readme",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^2.8.0",
+    "jsdom": "^15.1.1"
+  }
+}
